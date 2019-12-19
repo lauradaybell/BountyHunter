@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/bountydb'
     }, () => console.log("Connected to MongoDB" ))
         
 
-app.use("/bounty", require("./routes/BountyRouter"))
+app.use("/bounty", require("./routes/bountyRouter"))
 app.use(express.static(path.join(__dirname, "client", "build")))
 
 
