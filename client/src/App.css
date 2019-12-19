@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #DDDDDD;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px; 
+}
+.single {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    color: #767676;
+    border: '1px solid black';
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.mainForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin: 50px;
+}
+
+input[type=text] {
+    font-size: 20px;
+    padding: 10px;
+}
+input[type=number] {
+    font-size: 20px;
+    padding: 10px;
+}
+input[type=radio] {
+    font-size: 20px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.price {
+    display: block;
+    margin: auto;
+}
+
+.dead {
+    display: none;
+}
+.deadBox {
+    display: flex;
+    flex-wrap: wrap;
+    color: #661f34;
+    border: '1px solid black';
+    margin: 10px;
+    padding: 10px;
+    text-decoration: line-through;
+    background-color: #767676;
+}
+
+/* .deadBox:after {
+    content: 'X';
+    position: absolute;
+    text-align: center;
+    padding-left: 247px;
+    font-size: 94px;
+    
+} */
+h1 {
+    background-color: #661f34;
+    text-align: center;
+    padding: 10px;
+    color: #DDDDDD;
+}
+.type {
+    display: flex;
+    justify-content: space-around;
+}
+.radios {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    align-items: center;
+}
+.divider {
+    background-color: #661f34;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 10px;
+    color: #DDDDDD;
+}
+
+label {
+    padding: 0 25px;
+    font-size: 20px;
+}
+
+button {
+    width: fit-content;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+
+.toggleButton {
+    background-color: #767676;
+    color: #DDDDDD;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    box-shadow: #661f34 5px -5px 25px inset;
+}
+.toggleButton:after {
+    content: "Click to STOP ADDING BADDIES!";
+    
+}
+.textTwo:after {
+    content: "Click to ADD BADDIES!!!";
+    ;
+}
+.changeExistingBtn {
+    margin: auto;
+    display: flex;
+}
+
+.deadBox > form {
+    display: none;
+}
+
+.deadBox > button {
+    display: none;
+}
+
+.bountyAmt {
+    display: flex;
+    margin: auto;
+
+}
+
+.single > button {
+    box-shadow: 5px 5px 5px #661f34;
+}
+
+.newBaddieSubmit {
+    box-shadow: 5px 5px 5px #661f34;
+}
